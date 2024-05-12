@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+C:/Users/22H2/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.3.0/etc/AC6.6.18.0.cmake
+C:/Users/22H2/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.3.0/etc/CMSIS-Build-Utils.cmake
+C:/Users/22H2/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.3.0/etc/CMakeASM/CMakeAS_ARMInformation.cmake
+C:/Users/22H2/Documents/Boards/Keil5/HM1/USER/tmp/ENV/HM1/CMakeLists.txt
+C:/Users/22H2/Documents/Boards/Keil5/HM1/build/CMakeFiles/3.28.1/CMakeAS_ARMCompiler.cmake
+C:/Users/22H2/Documents/Boards/Keil5/HM1/build/CMakeFiles/3.28.1/CMakeCCompiler.cmake
+C:/Users/22H2/Documents/Boards/Keil5/HM1/build/CMakeFiles/3.28.1/CMakeSystem.cmake
+C:/cmakex64/share/cmake-3.28/Modules/CMakeCInformation.cmake
+C:/cmakex64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake
+C:/cmakex64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake
+C:/cmakex64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake
+C:/cmakex64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake
+C:/cmakex64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake
+C:/cmakex64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake
+C:/cmakex64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/cmakex64/share/cmake-3.28/Modules/Compiler/MSVC-C.cmake
+C:/cmakex64/share/cmake-3.28/Modules/Compiler/MSVC.cmake
+C:/cmakex64/share/cmake-3.28/Modules/Platform/Generic.cmake

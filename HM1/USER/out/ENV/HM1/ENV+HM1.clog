@@ -1,0 +1,8 @@
+# CMSIS Build Audit File generated on 2024-05-13T00:33:46
+
+# Project Description File: c:/Users/22H2/Documents/GitHub/embed-lab-homework/HM1/USER/ENV+HM1.cprj
+
+# Toolchain Configuration File: C:/Users/22H2/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.3.0/etc/AC6.6.18.0.cmake
+
+# Package: Keil::STM32F1xx_DFP@2.4.1
+  Location: C:\Users\22H2\AppData\Local\arm\packs/Keil/STM32F1xx_DFP/2.4.1/
