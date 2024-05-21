@@ -7,3 +7,11 @@ LED 闪烁：[https://github.com/labspc/embed-lab-homework/blob/main/HM1/USER/EN
 ## SimResource
 这个文件夹下是模拟的的演示视频：
 [https://github.com/labspc/embed-lab-homework/tree/main/SimResource](https://github.com/labspc/embed-lab-homework/tree/main/SimResource)
+
+## RepoetPDFs
+
+三个实验的文字版叙述
+
+Lab1
+Lab2
+Lab3
