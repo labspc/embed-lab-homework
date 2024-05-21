@@ -1,0 +1,103 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/22H2/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.3.0/etc/AC6.6.18.0.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/22H2/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.3.0/etc/CMSIS-Build-Utils.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:/Users/22H2/Documents/Boards/Keil5/HM1/build/CMakeFiles/3.28.1/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/cmakex64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:/Users/22H2/Documents/Boards/Keil5/HM1/build/CMakeFiles/3.28.1/CMakeAS_ARMCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:/Users/22H2/Documents/Boards/Keil5/HM1/build/CMakeFiles/3.28.1/CMakeCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/cmakex64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/cmakex64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/cmakex64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/cmakex64/share/cmake-3.28/Modules/Platform/Generic.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/22H2/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.3.0/etc/CMakeASM/CMakeAS_ARMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/cmakex64/share/cmake-3.28/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/cmakex64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/cmakex64/share/cmake-3.28/Modules/Compiler/MSVC-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/cmakex64/share/cmake-3.28/Modules/Compiler/MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/cmakex64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/cmakex64/share/cmake-3.28/Modules/Platform/Generic.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/cmakex64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "C:/Users/22H2/Documents/Boards/Keil5/HM1/build",
+		"source" : "C:/Users/22H2/Documents/Boards/Keil5/HM1/USER/tmp/ENV/HM1"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

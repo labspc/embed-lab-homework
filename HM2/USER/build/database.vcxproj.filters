@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\22H2\Documents\Boards\Keil5\HM1\USER\build\CMakeFiles\3f526518acd4c3de35201155803686a0\database.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\22H2\Documents\Boards\Keil5\HM1\USER\tmp\ENV\HM1\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\22H2\Documents\Boards\Keil5\HM1\USER\build\CMakeFiles\database" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{341B00C1-B4FC-37BB-A7DA-6199BF2FC23D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

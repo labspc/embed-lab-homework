@@ -1,0 +1,367 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Lambert Li
+SUES
+User-based license: Keil MDK Community (non-commercial free of charge)
+Valid until: Jun 1 2033. Cached until: May 5 2024
+ 
+Tool Versions:
+Toolchain:       Keil MDK Community (non-commercial free of charge  Version: 5.39.0.0
+Toolchain Path:  G:\embedded\MDK539\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.9.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\22H2\Desktop\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Template\MDK-ARM\Project.uvprojx
+Project File Date:  04/28/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'G:\embedded\MDK539\ARM\ARMCLANG\Bin'
+Build target 'STM32100E-EVAL_RCT6'
+../../../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(445): error: non-ASM statement in naked function is not supported
+  445 |   uint32_t result=0;
+      |   ^
+../../../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(442): note: attribute is here
+  442 | uint32_t __get_PSP(void) __attribute__( ( naked ) );
+      |                                           ^
+../../../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(465): error: parameter references not allowed in naked functions
+  465 |                   "BX  lr     \n\t" : : "r" (topOfProcStack) );
+      |                                              ^
+../../../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(461): note: attribute is here
+  461 | void __set_PSP(uint32_t topOfProcStack) __attribute__( ( naked ) );
+      |                                                          ^
+../../../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(479): error: non-ASM statement in naked function is not supported
+  479 |   uint32_t result=0;
+      |   ^
+../../../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(476): note: attribute is here
+  476 | uint32_t __get_MSP(void) __attribute__( ( naked ) );
+      |                                           ^
+../../../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(499): error: parameter references not allowed in naked functions
+  499 |                   "BX  lr     \n\t" : : "r" (topOfMainStack) );
+      |                                              ^
+../../../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(495): note: attribute is here
+  495 | void __set_MSP(uint32_t topOfMainStack) __attribute__( ( naked ) );
+      |                                                          ^
+4 errors generated.
+compiling core_cm3.c...
+../../../Utilities/STM32_EVAL/stm32_eval.c(27): warning: In file included from...
+../../../Utilities/STM32_EVAL/stm32_eval.h(169): error: "Please select first the STM32 EVAL board to be used (in stm32_eval.h)"
+  169 |  #error "Please select first the STM32 EVAL board to be used (in stm32_eval.h)"
+      |   ^
+../../../Utilities/STM32_EVAL/stm32_eval.c(57): error: "Please select first the STM32 EVAL board to be used (in stm32_eval.h)"
+   57 |  #error "Please select first the STM32 EVAL board to be used (in stm32_eval.h)"
+      |   ^
+2 errors generated.
+compiling stm32_eval.c...
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.c(48): warning: In file included from...
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(32): warning: In file included from...
+../../../Utilities/STM32_EVAL\stm32_eval.h(169): error: "Please select first the STM32 EVAL board to be used (in stm32_eval.h)"
+  169 |  #error "Please select first the STM32 EVAL board to be used (in stm32_eval.h)"
+      |   ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.c(48): warning: In file included from...
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(109): error: unknown type name 'uint32_t'
+  109 | void sFLASH_EraseSector(uint32_t SectorAddr);
+      |                         ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(111): error: unknown type name 'uint8_t'
+  111 | void sFLASH_WritePage(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t NumByteToWrite);
+      |                       ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(111): error: unknown type name 'uint32_t'
+  111 | void sFLASH_WritePage(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t NumByteToWrite);
+      |                                         ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(111): error: unknown type name 'uint16_t'
+  111 | void sFLASH_WritePage(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t NumByteToWrite);
+      |                                                             ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(112): error: unknown type name 'uint8_t'
+  112 | void sFLASH_WriteBuffer(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t NumByteToWrite);
+      |                         ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(112): error: unknown type name 'uint32_t'
+  112 | void sFLASH_WriteBuffer(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t NumByteToWrite);
+      |                                           ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(112): error: unknown type name 'uint16_t'
+  112 | void sFLASH_WriteBuffer(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t NumByteToWrite);
+      |                                                               ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(113): error: unknown type name 'uint8_t'
+  113 | void sFLASH_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint16_t NumByteToRead);
+      |                        ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(113): error: unknown type name 'uint32_t'
+  113 | void sFLASH_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint16_t NumByteToRead);
+      |                                          ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(113): error: unknown type name 'uint16_t'
+  113 | void sFLASH_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint16_t NumByteToRead);
+      |                                                             ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(114): error: unknown type name 'uint32_t'
+  114 | uint32_t sFLASH_ReadID(void);
+      | ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(115): error: unknown type name 'uint32_t'
+  115 | void sFLASH_StartReadSequence(uint32_t ReadAddr);
+      |                               ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(120): error: unknown type name 'uint8_t'
+  120 | uint8_t sFLASH_ReadByte(void);
+      | ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(121): error: unknown type name 'uint8_t'
+  121 | uint8_t sFLASH_SendByte(uint8_t byte);
+      | ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(121): error: unknown type name 'uint8_t'
+  121 | uint8_t sFLASH_SendByte(uint8_t byte);
+      |                         ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(122): error: unknown type name 'uint16_t'
+  122 | uint16_t sFLASH_SendHalfWord(uint16_t HalfWord);
+      | ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.h(122): error: unknown type name 'uint16_t'
+  122 | uint16_t sFLASH_SendHalfWord(uint16_t HalfWord);
+      |                              ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_flash.c(117): error: call to undeclared function 'sFLASH_LowLevel_DeInit'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  117 |   sFLASH_LowLevel_DeInit();
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32_eval_spi_flash.c...
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.c(54): warning: In file included from...
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(32): warning: In file included from...
+../../../Utilities/STM32_EVAL\stm32_eval.h(169): error: "Please select first the STM32 EVAL board to be used (in stm32_eval.h)"
+  169 |  #error "Please select first the STM32 EVAL board to be used (in stm32_eval.h)"
+      |   ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.c(54): warning: In file included from...
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(125): error: unknown type name 'ErrorStatus'
+  125 | ErrorStatus LM75_GetStatus(void);
+      | ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(126): error: unknown type name 'uint16_t'
+  126 | uint16_t LM75_ReadTemp(void);
+      | ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(127): error: unknown type name 'uint16_t'
+  127 | uint16_t LM75_ReadReg(uint8_t RegName);
+      | ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(127): error: unknown type name 'uint8_t'
+  127 | uint16_t LM75_ReadReg(uint8_t RegName);
+      |                       ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(128): error: unknown type name 'uint8_t'
+  128 | uint8_t LM75_WriteReg(uint8_t RegName, uint16_t RegValue);
+      | ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(128): error: unknown type name 'uint8_t'
+  128 | uint8_t LM75_WriteReg(uint8_t RegName, uint16_t RegValue);
+      |                       ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(128): error: unknown type name 'uint16_t'
+  128 | uint8_t LM75_WriteReg(uint8_t RegName, uint16_t RegValue);
+      |                                        ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(129): error: unknown type name 'uint8_t'
+  129 | uint8_t LM75_ReadConfReg(void);
+      | ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(130): error: unknown type name 'uint8_t'
+  130 | uint8_t LM75_WriteConfReg(uint8_t RegValue);
+      | ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(130): error: unknown type name 'uint8_t'
+  130 | uint8_t LM75_WriteConfReg(uint8_t RegValue);
+      |                           ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(131): error: unknown type name 'uint8_t'
+  131 | uint8_t LM75_ShutDown(FunctionalState NewState);
+      | ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.h(131): error: unknown type name 'FunctionalState'
+  131 | uint8_t LM75_ShutDown(FunctionalState NewState);
+      |                       ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.c(101): error: unknown type name '__IO'
+  101 | __IO uint32_t  LM75_Timeout = LM75_LONG_TIMEOUT; 
+      | ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.c(101): error: expected ';' after top level declarator
+  101 | __IO uint32_t  LM75_Timeout = LM75_LONG_TIMEOUT; 
+      |              ^
+      |              ;
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.c(109): error: unknown type name 'uint8_t'
+  109 | static void LM75_DMA_Config(LM75_DMADirection_TypeDef Direction, uint8_t* buffer, uint8_t NumData);
+      |                                                                  ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.c(109): error: unknown type name 'uint8_t'
+  109 | static void LM75_DMA_Config(LM75_DMADirection_TypeDef Direction, uint8_t* buffer, uint8_t NumData);
+      |                                                                                   ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.c(127): error: call to undeclared function 'LM75_LowLevel_DeInit'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  127 |   LM75_LowLevel_DeInit();
+      |   ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_i2c_tsensor.c(137): error: use of undeclared identifier 'I2C_InitTypeDef'
+  137 |   I2C_InitTypeDef   I2C_InitStructure;
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32_eval_i2c_tsensor.c...
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.c(47): warning: In file included from...
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(32): warning: In file included from...
+../../../Utilities/STM32_EVAL\stm32_eval.h(169): error: "Please select first the STM32 EVAL board to be used (in stm32_eval.h)"
+  169 |  #error "Please select first the STM32 EVAL board to be used (in stm32_eval.h)"
+      |   ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.c(47): warning: In file included from...
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(83): error: unknown type name '__IO'
+   83 |   __IO uint8_t  CSDStruct;            /*!< CSD structure */
+      |   ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(83): error: expected ';' at end of declaration list
+   83 |   __IO uint8_t  CSDStruct;            /*!< CSD structure */
+      |               ^
+      |               ;
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(84): error: unknown type name '__IO'
+   84 |   __IO uint8_t  SysSpecVersion;       /*!< System specification version */
+      |   ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(84): error: duplicate member 'uint8_t'
+   84 |   __IO uint8_t  SysSpecVersion;       /*!< System specification version */
+      |        ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(83): note: previous declaration is here
+   83 |   __IO uint8_t  CSDStruct;            /*!< CSD structure */
+      |        ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(84): error: expected ';' at end of declaration list
+   84 |   __IO uint8_t  SysSpecVersion;       /*!< System specification version */
+      |               ^
+      |               ;
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(85): error: unknown type name '__IO'
+   85 |   __IO uint8_t  Reserved1;            /*!< Reserved */
+      |   ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(85): error: duplicate member 'uint8_t'
+   85 |   __IO uint8_t  Reserved1;            /*!< Reserved */
+      |        ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(83): note: previous declaration is here
+   83 |   __IO uint8_t  CSDStruct;            /*!< CSD structure */
+      |        ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(85): error: expected ';' at end of declaration list
+   85 |   __IO uint8_t  Reserved1;            /*!< Reserved */
+      |               ^
+      |               ;
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(86): error: unknown type name '__IO'
+   86 |   __IO uint8_t  TAAC;                 /*!< Data read access-time 1 */
+      |   ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(86): error: duplicate member 'uint8_t'
+   86 |   __IO uint8_t  TAAC;                 /*!< Data read access-time 1 */
+      |        ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(83): note: previous declaration is here
+   83 |   __IO uint8_t  CSDStruct;            /*!< CSD structure */
+      |        ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(86): error: expected ';' at end of declaration list
+   86 |   __IO uint8_t  TAAC;                 /*!< Data read access-time 1 */
+      |               ^
+      |               ;
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(87): error: unknown type name '__IO'
+   87 |   __IO uint8_t  NSAC;                 /*!< Data read access-time 2 in CLK cycles */
+      |   ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(87): error: duplicate member 'uint8_t'
+   87 |   __IO uint8_t  NSAC;                 /*!< Data read access-time 2 in CLK cycles */
+      |        ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(83): note: previous declaration is here
+   83 |   __IO uint8_t  CSDStruct;            /*!< CSD structure */
+      |        ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(87): error: expected ';' at end of declaration list
+   87 |   __IO uint8_t  NSAC;                 /*!< Data read access-time 2 in CLK cycles */
+      |               ^
+      |               ;
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(88): error: unknown type name '__IO'
+   88 |   __IO uint8_t  MaxBusClkFrec;        /*!< Max. bus clock frequency */
+      |   ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(88): error: duplicate member 'uint8_t'
+   88 |   __IO uint8_t  MaxBusClkFrec;        /*!< Max. bus clock frequency */
+      |        ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(83): note: previous declaration is here
+   83 |   __IO uint8_t  CSDStruct;            /*!< CSD structure */
+      |        ^
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(88): error: expected ';' at end of declaration list
+   88 |   __IO uint8_t  MaxBusClkFrec;        /*!< Max. bus clock frequency */
+      |               ^
+      |               ;
+../../../Utilities/STM32_EVAL/Common/stm32_eval_spi_sd.h(89): error: unknown type name '__IO'
+   89 |   __IO uint16_t CardComdClasses;      /*!< Card command classes */
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32_eval_spi_sd.c...
+../main.c(24): warning: In file included from...
+../../../Utilities/STM32_EVAL\stm32_eval.h(169): error: "Please select first the STM32 EVAL board to be used (in stm32_eval.h)"
+  169 |  #error "Please select first the STM32 EVAL board to be used (in stm32_eval.h)"
+      |   ^
+../main.c(102): error: call to undeclared function 'STM_EVAL_LEDInit'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  102 |   STM_EVAL_LEDInit(LED1);
+      |   ^
+../main.c(122): error: call to undeclared function 'STM_EVAL_COMInit'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  122 |   STM_EVAL_COMInit(COM1, &USART_InitStructure);
+      |   ^
+../main.c(139): error: call to undeclared function 'LCD_Clear'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  139 |   LCD_Clear(LCD_COLOR_WHITE);
+      |   ^
+../main.c(139): error: use of undeclared identifier 'LCD_COLOR_WHITE'
+  139 |   LCD_Clear(LCD_COLOR_WHITE);
+      |             ^
+../main.c(142): error: call to undeclared function 'LCD_SetBackColor'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  142 |   LCD_SetBackColor(LCD_COLOR_BLUE);
+      |   ^
+../main.c(142): error: use of undeclared identifier 'LCD_COLOR_BLUE'
+  142 |   LCD_SetBackColor(LCD_COLOR_BLUE);
+      |                    ^
+../main.c(144): error: call to undeclared function 'LCD_SetTextColor'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  144 |   LCD_SetTextColor(LCD_COLOR_WHITE);
+      |   ^
+../main.c(144): error: use of undeclared identifier 'LCD_COLOR_WHITE'
+  144 |   LCD_SetTextColor(LCD_COLOR_WHITE);
+      |                    ^
+../main.c(145): error: call to undeclared function 'LCD_DisplayStringLine'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  145 |   LCD_DisplayStringLine(LCD_LINE_0, (uint8_t *)MESSAGE1);
+      |   ^
+../main.c(145): error: use of undeclared identifier 'MESSAGE1'
+  145 |   LCD_DisplayStringLine(LCD_LINE_0, (uint8_t *)MESSAGE1);
+      |                                                ^
+../main.c(145): error: use of undeclared identifier 'LCD_LINE_0'
+  145 |   LCD_DisplayStringLine(LCD_LINE_0, (uint8_t *)MESSAGE1);
+      |                         ^
+../main.c(146): error: use of undeclared identifier 'MESSAGE2'
+  146 |   LCD_DisplayStringLine(LCD_LINE_1, (uint8_t *)MESSAGE2);
+      |                                                ^
+../main.c(146): error: use of undeclared identifier 'LCD_LINE_1'
+  146 |   LCD_DisplayStringLine(LCD_LINE_1, (uint8_t *)MESSAGE2);
+      |                         ^
+../main.c(147): error: use of undeclared identifier 'MESSAGE3'
+  147 |   LCD_DisplayStringLine(LCD_LINE_2, (uint8_t *)MESSAGE3);
+      |                                                ^
+../main.c(147): error: use of undeclared identifier 'LCD_LINE_2'
+  147 |   LCD_DisplayStringLine(LCD_LINE_2, (uint8_t *)MESSAGE3);
+      |                         ^
+../main.c(151): error: use of undeclared identifier 'MESSAGE1'
+  151 |   printf("\n\r %s", MESSAGE1);
+      |                     ^
+../main.c(152): error: use of undeclared identifier 'MESSAGE2'
+  152 |   printf(" %s", MESSAGE2);
+      |                 ^
+../main.c(153): error: use of undeclared identifier 'MESSAGE3'
+  153 |   printf(" %s\n\r", MESSAGE3);
+      |                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling main.c...
+".\STM32100E-EVAL\STM32100E-EVAL.axf" - 82 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.0.0.pack
+                ARM::CMSIS@6.0.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.0.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_STM32100E-EVAL_RCT6
+  G:/embedded/MDK539Pack/ARM/CMSIS/6.0.0/CMSIS/Core/Include
+  G:/embedded/MDK539Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.0.0
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
