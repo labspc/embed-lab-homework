@@ -15,3 +15,7 @@ LED 闪烁：[https://github.com/labspc/embed-lab-homework/blob/main/HM1/USER/EN
 Lab1
 Lab2
 Lab3
+
+## End
+
+Lab3 花了很长时间去完成，最终掌握了TIM精准延时公式的使用，对代码进行了重构，通过使用宏来提高复用，还完成了仿真模拟

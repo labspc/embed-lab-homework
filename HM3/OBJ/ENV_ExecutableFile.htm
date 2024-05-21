@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\OBJ\ENV_ExecutableFile.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\OBJ\ENV_ExecutableFile.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Wed May 22 03:05:22 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Wed May 22 03:14:28 2024
 <BR><P>
 <H3>Maximum Stack Usage =         64 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -313,11 +313,11 @@ Global Symbols
 
 <P><STRONG><a name="[61]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
-<P><STRONG><a name="[4c]"></a>BASIC_TIM_Config</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, main.o(.text.BASIC_TIM_Config))
+<P><STRONG><a name="[4c]"></a>BASIC_TIM_Config</STRONG> (Thumb, 96 bytes, Stack size 32 bytes, main.o(.text.BASIC_TIM_Config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = BASIC_TIM_Config &rArr; TIM_TimeBaseInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
-<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
+<BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetFlagStatus
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearFlag
 <LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimeBaseInit
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
@@ -417,14 +417,14 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BASIC_TIM_Config
 </UL>
 
-<P><STRONG><a name="[51]"></a>TIM_Cmd</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, stm32f10x_tim.o(.text.TIM_Cmd))
+<P><STRONG><a name="[50]"></a>TIM_Cmd</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, stm32f10x_tim.o(.text.TIM_Cmd))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIM_Cmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BASIC_TIM_Config
 </UL>
 
-<P><STRONG><a name="[50]"></a>TIM_ITConfig</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, stm32f10x_tim.o(.text.TIM_ITConfig))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIM_ITConfig
+<P><STRONG><a name="[51]"></a>TIM_GetFlagStatus</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, stm32f10x_tim.o(.text.TIM_GetFlagStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIM_GetFlagStatus
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BASIC_TIM_Config
 </UL>
