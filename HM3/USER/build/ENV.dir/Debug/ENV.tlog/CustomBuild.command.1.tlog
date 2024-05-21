@@ -1,0 +1,10 @@
+^C:\USERS\22H2\DOCUMENTS\BOARDS\KEIL5\HM1\USER\TMP\ENV\HM1\CMAKELISTS.TXT
+setlocal
+C:\Users\22H2\.vcpkg\artifacts\vcpkg-ce-default\tools.kitware.cmake\3.25.2\bin\cmake.exe -SC:/Users/22H2/Documents/Boards/Keil5/HM1/USER/tmp/ENV/HM1 -BC:/Users/22H2/Documents/Boards/Keil5/HM1/USER/build --check-stamp-file C:/Users/22H2/Documents/Boards/Keil5/HM1/USER/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

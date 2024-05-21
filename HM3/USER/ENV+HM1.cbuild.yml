@@ -1,0 +1,141 @@
+build:
+  generated-by: csolution version 2.3.0
+  solution: ENV.csolution.yml
+  project: ENV.cproject.yml
+  context: ENV+HM1
+  compiler: AC6@6.21.0
+  device: STM32F103RC
+  device-pack: Keil::STM32F1xx_DFP@2.4.1
+  processor:
+    endian: little
+    fpu: off
+    core: Cortex-M3
+  packs:
+    - pack: Keil::STM32F1xx_DFP@2.4.1
+      path: ${CMSIS_PACK_ROOT}/Keil/STM32F1xx_DFP/2.4.1
+  optimize: speed
+  debug: on
+  misc:
+    C:
+      - -std=c99
+      - -fno-rtti
+      - -funsigned-char
+      - -fshort-enums
+      - -fshort-wchar
+      - -ffunction-sections
+      - -w
+    CPP:
+      - -xc++
+      - -std=c++11
+      - -fno-rtti
+      - -funsigned-char
+      - -fshort-enums
+      - -fshort-wchar
+      - -ffunction-sections
+      - -w
+    Link:
+      - --library_type=microlib
+      - --map
+      - --load_addr_map_info
+      - --xref
+      - --callgraph
+      - --symbols
+      - --info sizes
+      - --info totals
+      - --info unused
+      - --info veneers
+      - --strict
+      - --summary_stderr
+      - --info summarysizes
+  define:
+    - USE_STDPERIPH_DRIVER
+    - STM32F10X_HD
+    - __MICROLIB
+    - STM32F10X_HD
+  add-path:
+    - .
+    - ../CORE
+    - ../STM32F10x_FWLib/inc
+    - ${CMSIS_PACK_ROOT}/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+  output-dirs:
+    intdir: tmp/ENV/HM1
+    outdir: out/ENV/HM1
+    rtedir: RTE
+  output:
+    - type: elf
+      file: ENV.axf
+  linker:
+    script: ENV_HM1.sct
+  groups:
+    - group: USER
+      files:
+        - file: main.c
+          category: sourceC
+        - file: stm32f10x_it.c
+          category: sourceC
+        - file: system_stm32f10x.c
+          category: sourceC
+    - group: CORE
+      files:
+        - file: ../CORE/core_cm3.c
+          category: sourceC
+        - file: ../CORE/startup_stm32f10x_hd.s
+          category: sourceAsm
+          misc:
+            ASM:
+              - -masm=auto
+    - group: FWLIB
+      files:
+        - file: ../STM32F10x_FWLib/src/misc.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_adc.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_bkp.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_can.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_cec.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_crc.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_dac.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_dbgmcu.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_dma.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_exti.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_flash.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_fsmc.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_gpio.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_i2c.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_iwdg.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_pwr.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_rcc.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_rtc.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_sdio.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_spi.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_tim.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_usart.c
+          category: sourceC
+        - file: ../STM32F10x_FWLib/src/stm32f10x_wwdg.c
+          category: sourceC
+  constructed-files:
+    - file: RTE/_HM1/RTE_Components.h
+      category: header
+  licenses:
+    - license: <unknown>
+      packs:
+        - pack: Keil::STM32F1xx_DFP@2.4.1
