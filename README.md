@@ -21,3 +21,7 @@ Lab3
 Lab3 花了很长时间去完成，最终掌握了TIM精准延时公式的使用，对代码进行了重构，通过使用宏来提高复用，还完成了仿真模拟。
 
 本仓库 Lab3 为最新版，提交作业时并未完善好 Lab3 .
+
+Lab3 见： [https://github.com/labspc/embed-lab-homework/blob/main/HM3/USER/main.c](https://github.com/labspc/embed-lab-homework/blob/main/HM3/USER/main.c)
+
+目前如果使用通用定时器，完全可以复用 Lab3 代码，只需对宏 `DELAY` 进行修改即可。    
