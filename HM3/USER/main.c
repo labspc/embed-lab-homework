@@ -22,7 +22,7 @@ T=1.17s  ARR=1000-1  PSC=72*100*1.17-1
 #define DELAY 1.17
 
 #define TIM_ARR_VALUE 1000 - 1             // 设定自动重载寄存器的值
-#define TIM_PSC_VALUE 72 * 100 * DELAY - 1 // 设定预分频系数
+#define TIM_PSC_VALUE (72 * 100 * DELAY) - 1 // 设定预分频系数
 
 /* LED0 初始化模板（可复用） -------------------------------------------------------------------*/
 void LED_Init(void)
