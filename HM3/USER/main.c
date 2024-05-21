@@ -18,7 +18,7 @@ T=1.17s  ARR=1000-1  PSC=72*100*1.17-1
 在这之中省略了一个x，且其默认为1000ms，为什么？
 */
 
-// 定义延时时间(s)
+// 自定义延时(单位：s)
 #define DELAY 1.17
 
 #define TIM_ARR_VALUE 1000 - 1             // 设定自动重载寄存器的值
@@ -79,14 +79,10 @@ void BASIC_TIM_Config(void)
   // 清除计数器中断标志位
   TIM_ClearFlag(BASIC_TIM, TIM_FLAG_Update);
 
-  // 开启计数器中断
-  TIM_ITConfig(BASIC_TIM, TIM_IT_Update, ENABLE);
-
   // 使能计数器
   TIM_Cmd(BASIC_TIM, ENABLE);
-
-  // 暂时关闭定时器的时钟，等待使用
-  BASIC_TIM_APBxClock_FUN(BASIC_TIM_CLK, DISABLE);
+  // 等待计数器更新
+  while (TIM_GetFlagStatus(BASIC_TIM, TIM_FLAG_Update) == RESET);
 }
 int main(void)
 {
